@@ -10,7 +10,7 @@ def find_duplicates(lst: List[int]) -> int:
     :param lst:
     :return:
     '''
-    perevir: List[int] = []
+    perevir = []  # type: List[int]
     count_duplicates = 0
     for number in lst:
         if number not in perevir:
