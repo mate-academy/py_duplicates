@@ -7,8 +7,4 @@ from typing import List
 
 def find_duplicates(lst: List[int]) -> int:
     """Find count"""
-    count = 0
-    for value in set(lst):
-        if lst.count(value) > 1:
-            count += 1
-    return count
+    return sum(1 for i in set(lst) if lst.count(i) > 1)
