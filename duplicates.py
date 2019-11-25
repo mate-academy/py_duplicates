@@ -2,10 +2,10 @@
 from typing import List
 
 
-def find_duplicates(lst):
-    """return count of duplicates"""
-    duplicates = []
-    unique = []
+def find_duplicates(lst: List[int]) -> int:
+    """doc"""
+    duplicates = []   # type: List[int]
+    unique = []   # type: List[int]
     duplicate_count = 0
     for element in lst:
         if element not in unique:
