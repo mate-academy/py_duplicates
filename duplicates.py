@@ -1,11 +1,13 @@
+"""DOC"""
 from typing import List
 
 
-def find_duplicates(l: List[int]) -> int:
+def find_duplicates(lst):
+    """return count of duplicates"""
     duplicates = []
     unique = []
     duplicate_count = 0
-    for element in l:
+    for element in lst:
         if element not in unique:
             unique.append(element)
         else:
@@ -14,4 +16,3 @@ def find_duplicates(l: List[int]) -> int:
                 duplicate_count += 1
 
     return duplicate_count
-
