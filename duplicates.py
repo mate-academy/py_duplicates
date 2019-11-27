@@ -9,7 +9,7 @@ def find_duplicates(numbers: List[int]) -> int:
     :param numbers: [int]
     :return: count of duplicates
     """
-    duplicates: Dict[int, int] = {}
+    duplicates = {}  # type: Dict[int, int]
     count = 0
 
     for item in numbers:
